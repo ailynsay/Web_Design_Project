@@ -21,19 +21,16 @@
       text-align: center;
 	  font-family: 'Questrial', Sans-Serif;
     }
-
     .footer-content {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 20px;
     }
-
     .footer-section {
       flex-basis: 50%;
       max-width: 300px;
     }
-
     /* Styling for the form */
     #contactForm input[type="text"],
     #contactForm input[type="email"],
@@ -56,7 +53,6 @@
 <header>
   <h2>Fan Favourite GT-Rs Gallery</h2>
 </header>
-
 <section> 
   <article>
     <h1>Skyline GT-R</h1>
@@ -67,7 +63,6 @@
   </article>
 </section>
 <br>
-  
 <!-- Gallery Section -->
 <div class="w3-card w3-container" style="min-height:460px" id="text">
 <div class="w3-content" style="max-width:800px;position:relative">
@@ -89,7 +84,6 @@
 <a class="w3-button w3-hover-dark-grey" style="position:absolute;top:45%;right:0;" onclick="plusDivs(+1)">&#10095;</a>
 </div>
 <br>
-
 <footer>
     <div class="footer-content">
       <div class="footer-section">
@@ -126,12 +120,10 @@
 <script>
 // Slideshows
 var slideIndex = 1;
-
 function plusDivs(n) {
   slideIndex = slideIndex + n;
   showDivs(slideIndex);
 }
-
 function showDivs(n) {
   var x = document.getElementsByClassName("mySlides");
   if (n > x.length) {slideIndex = 1}    
@@ -142,17 +134,14 @@ function showDivs(n) {
   x[slideIndex-1].style.display = "block";  
 }
 showDivs(1);
-
 //footer
   // Perform validation here if needed
   // For example, you can check if any field is empty
-
   // Display an alert with the submitted data
   function showAlert() {
     var email = document.getElementById("emailInput").value;
     alert("Thank you! Your email address " + email + " has been submitted.");
   }
-
 </script>
 </body>
 </html>
